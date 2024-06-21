@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ session('locale') }}">
+<html lang="{{ session('locale') }}" class="dark">
 
 <head>
     <meta charset="UTF-8">
