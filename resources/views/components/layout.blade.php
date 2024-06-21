@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -422,8 +422,8 @@
         themeToggleBtn.addEventListener('click', function() {
 
             // toggle icons inside button
-            //  themeToggleDarkIcon.classList.toggle('hidden');
-            //  themeToggleLightIcon.classList.toggle('hidden');
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
 
             // if set via local storage previously
             if (localStorage.getItem('color-theme')) {
