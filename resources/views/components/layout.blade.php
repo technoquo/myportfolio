@@ -299,7 +299,7 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div>
+                {{-- <div>
                     <button id="theme-toggle" type="button"
                         class="flex flex-row gap-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
                         <svg id="theme-toggle-dark-icon" class=" w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -313,7 +313,7 @@
                                 fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
                     </button>
-                </div>
+                </div> --}}
             </div>
 
             <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-language">
