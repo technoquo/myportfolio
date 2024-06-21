@@ -26,7 +26,7 @@ class  HomeController extends Controller
 
 
 
-        $skills = Skills::where('active', 1)->get();
+        $skills = Skills::where('active', 1)->orderBy('name', 'asc')->get();
 
 
 
