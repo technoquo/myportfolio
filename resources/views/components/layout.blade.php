@@ -48,7 +48,9 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
-    <script type="8f64b7e8088bc8a6d2adb262-text/javascript">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HSPERD24E"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
