@@ -24,17 +24,18 @@
     <meta property="og:title" content="Código Accesible con Leo">
     <meta property="og:description"
         content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
-    <meta property="og:image" content="https://codigoaccesibleconleo.com/img/leo.png">
+    <link rel="canonical" href="https://codigoaccesibleconleo.com/" />
+    <meta property="og:locale" content="fr_BE" />
+    <meta property="og:type" content="website" />
+
     <meta property="og:url" content="https://codigoaccesibleconleo.com/">
+    <meta property="og:site_name" content="codigoaccesibleconleo" />
     <meta property="og:type" content="website">
-
-    <!-- Existing Twitter Card Meta Tags -->
-
-    <meta name="twitter:title" content="Código Accesible con Leo">
-    <meta name="twitter:description"
-        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
-    <meta name="twitter:image" content="https://codigoaccesibleconleo.com/img/leo.png">
-    <meta name="twitter:site" content="@codigo_leo">
+    <meta property="og:image" content="https://codigoaccesibleconleo.com/img/leo.png">
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
