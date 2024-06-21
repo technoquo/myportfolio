@@ -29,7 +29,7 @@
     <meta property="og:type" content="website">
 
     <!-- Existing Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
+
     <meta name="twitter:title" content="Código Accesible con Leo">
     <meta name="twitter:description"
         content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
