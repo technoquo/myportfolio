@@ -12,7 +12,9 @@
 
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+                <img class="object-scale-down h-48 w-96"
+                    src="https://res.cloudinary.com/acceso-visual/image/upload/v1718955526/leonel-photoaidcom-cropped_kdygj9.png"
+                    alt="Leonel">
             </div>
 
         </div>

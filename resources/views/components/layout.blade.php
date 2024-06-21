@@ -5,7 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio - {{ $seo }}</title>
+    <title>
+        @if (session('locale') == 'en' || session('locale') == null)
+            Code accessible with Leo - {{ $seo }}
+        @else
+            Código Accesible con Leo - {{ $seo }}
+        @endif
+    </title>
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="desarrollo web, accesibilidad web, Laravel, PHP, Vue.js, Node.js, soluciones web, programación">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Código Accesible con Leo">
+    <meta property="og:description"
+        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.'">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/acceso-visual/image/upload/v1670851036/mdf8dvwgqkylpm768a36.jpg">
+    <meta property="og:url" content="https://codigoaccesibleconleo.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Código Accesible con Leo">
+    <meta name="twitter:description"
+        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.'">
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/acceso-visual/image/upload/v1670851036/mdf8dvwgqkylpm768a36.jpg">
+    <meta name="twitter:site" content="@codigo_leo">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
@@ -17,6 +48,16 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <script type="8f64b7e8088bc8a6d2adb262-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4HSPERD24E');
+    </script>
 </head>
 
 <body class="bg-white dark:bg-gray-900 font-hanken-grotesk pb-20  h-screen">
@@ -26,8 +67,13 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"> <!-- Navbar -->
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Código Accesible con
-                    Leo</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                    @if (session('locale') == 'en' || session('locale') == null)
+                        Code accessible with Leo
+                    @else
+                        Código Accesible con Leo
+                    @endif
+                </span>
             </a>
             <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse"> <!-- Dropdown menu -->
                 <button type="button" data-dropdown-toggle="language-dropdown-menu"
@@ -84,14 +130,17 @@
                                 </ellipse>
                                 <ellipse fill="#89C5E4" cx="8.5" cy="16" rx="1.5" ry="1">
                                 </ellipse>
-                                <ellipse fill="#088930" cx="8.5" cy="18.5" rx="1.5" ry="2.5">
+                                <ellipse fill="#088930" cx="8.5" cy="18.5" rx="1.5"
+                                    ry="2.5">
                                 </ellipse>
-                                <ellipse fill="#DCA841" cx="8.5" cy="16.5" rx="1.5" ry=".5">
+                                <ellipse fill="#DCA841" cx="8.5" cy="16.5" rx="1.5"
+                                    ry=".5">
                                 </ellipse>
                                 <path fill="#89C5E4"
                                     d="M10 18c0 1.104-.671 2-1.5 2S7 19.104 7 18s.671-1.498 1.5-1.498S10 16.896 10 18z">
                                 </path>
-                                <ellipse fill="#DCA841" cx="8.5" cy="18.5" rx="1.5" ry=".5">
+                                <ellipse fill="#DCA841" cx="8.5" cy="18.5" rx="1.5"
+                                    ry=".5">
                                 </ellipse>
                             </g>
                         </svg>
@@ -314,7 +363,13 @@
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">{{ date('Y') }} <a
-                    href="/" class="hover:underline">Codigo Accesible con Leo</a>.
+                    href="/" class="hover:underline">
+                    @if (session('locale') == 'en' || session('locale') == null)
+                        Code accessible with Leo
+                    @else
+                        Código Accesible con Leo
+                    @endif
+                </a>.
 
                 @if (session('locale') == 'en')
                     All Rights Reserved.
@@ -326,7 +381,7 @@
                 <li>
                     <a href="{{ route('about') }}" class="hover:underline me-4 md:me-6">
                         @if (session('locale') == 'en')
-                            Acerca
+                            About
                         @else
                             Acerca
                         @endif
@@ -346,52 +401,52 @@
         </div>
     </footer>
 
+    <script>
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
+        // Change the icons inside the button based on previous settings
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+                '(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function() {
+
+            // toggle icons inside button
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+
+                // if NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+
+        });
+    </script>
 
 </body>
 
-<script>
-    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-    var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-    // Change the icons inside the button based on previous settings
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
-            '(prefers-color-scheme: dark)').matches)) {
-        themeToggleLightIcon.classList.remove('hidden');
-    } else {
-        themeToggleDarkIcon.classList.remove('hidden');
-    }
-
-    var themeToggleBtn = document.getElementById('theme-toggle');
-
-    themeToggleBtn.addEventListener('click', function() {
-
-        // toggle icons inside button
-        themeToggleDarkIcon.classList.toggle('hidden');
-        themeToggleLightIcon.classList.toggle('hidden');
-
-        // if set via local storage previously
-        if (localStorage.getItem('color-theme')) {
-            if (localStorage.getItem('color-theme') === 'light') {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            }
-
-            // if NOT set via local storage previously
-        } else {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            }
-        }
-
-    });
-</script>
 
 </html>
