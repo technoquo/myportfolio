@@ -224,9 +224,9 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
-            <div class="relative left-10 ">
+            {{-- <div class="relative left-10 ">
                 <x-dark />
-            </div>
+            </div> --}}
         </div>
 
         <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-language">
