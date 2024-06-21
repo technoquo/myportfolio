@@ -18,7 +18,8 @@
     <meta name="author" content="Leo">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
     <!-- Existing Open Graph Meta Tags -->
     <meta property="og:title" content="Código Accesible con Leo">
     <meta property="og:description"
