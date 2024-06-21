@@ -229,7 +229,8 @@
             </div> --}}
         </div>
 
-        <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-language">
+        <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1 dark:bg-gray-900"
+            id="navbar-language">
             <ul
                 class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                 @foreach ($page as $menu)
