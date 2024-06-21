@@ -1,4 +1,4 @@
-<nav class="bg-white fixed  dark:bg-gray-700 w-full top-0 border-b-2 border-gray-200 dark:border-gray-600 ">
+<nav class="bg-white fixed  dark:bg-gray-700 w-full top-0 border-b-2 border-gray-200 dark:border-gray-600 h-24 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"> <!-- Navbar -->
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 
