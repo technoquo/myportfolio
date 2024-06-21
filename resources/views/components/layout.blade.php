@@ -12,17 +12,14 @@
             Código Accesible con Leo - {{ $seo }}
         @endif
     </title>
-    <!-- Meta Description -->
     <meta name="description"
         content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
+    <meta name="keywords" content="desarrollo web, accesibilidad web, soluciones web, Código Accesible, Leo">
+    <meta name="author" content="Leo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Meta Keywords -->
-    <meta name="keywords"
-        content="desarrollo web, accesibilidad web, Laravel, PHP, Vue.js, Node.js, soluciones web, programación">
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
-
-    <!-- Open Graph Meta Tags -->
+    <!-- Existing Open Graph Meta Tags -->
     <meta property="og:title" content="Código Accesible con Leo">
     <meta property="og:description"
         content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
@@ -30,7 +27,7 @@
     <meta property="og:url" content="https://codigoaccesibleconleo.com/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta Tags -->
+    <!-- Existing Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Código Accesible con Leo">
     <meta name="twitter:description"
