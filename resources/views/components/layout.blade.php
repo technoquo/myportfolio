@@ -19,6 +19,8 @@
     <!-- Meta Keywords -->
     <meta name="keywords"
         content="desarrollo web, accesibilidad web, Laravel, PHP, Vue.js, Node.js, soluciones web, programación">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Código Accesible con Leo">
@@ -62,7 +64,7 @@
     </script>
 </head>
 
-<body class="bg-white dark:bg-gray-900 font-hanken-grotesk pb-20  h-screen">
+<body class="dark:bg-gray-900 font-hanken-grotesk pb-20  h-screen">
 
 
     <nav class="bg-white fixed  dark:bg-gray-700 w-full top-0 border-b-2 border-gray-200 dark:border-gray-600 ">
@@ -130,7 +132,8 @@
                                 </path>
                                 <ellipse fill="#DCA841" cx="8.5" cy="19.5" rx="2.5" ry="1.5">
                                 </ellipse>
-                                <ellipse fill="#89C5E4" cx="8.5" cy="16" rx="1.5" ry="1">
+                                <ellipse fill="#89C5E4" cx="8.5" cy="16" rx="1.5"
+                                    ry="1">
                                 </ellipse>
                                 <ellipse fill="#088930" cx="8.5" cy="18.5" rx="1.5"
                                     ry="2.5">
