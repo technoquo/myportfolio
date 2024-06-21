@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -64,7 +64,7 @@
     </script>
 </head>
 
-<body class="dark:bg-gray-900 font-hanken-grotesk pb-20  h-screen">
+<body class="bg-white dark:bg-gray-900 font-hanken-grotesk pb-20  h-screen">
 
 
     <nav class="bg-white fixed  dark:bg-gray-700 w-full top-0 border-b-2 border-gray-200 dark:border-gray-600 ">
