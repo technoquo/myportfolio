@@ -25,8 +25,8 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Código Accesible con Leo">
     <meta property="og:description"
-        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.'">
-    <meta property="og:image" content="https://codigoaccesibleconleo.com/img/leo.jpeg">
+        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
+    <meta property="og:image" content="https://codigoaccesibleconleo.com/img/leo.png">
     <meta property="og:url" content="https://codigoaccesibleconleo.com/">
     <meta property="og:type" content="website">
 
@@ -34,8 +34,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Código Accesible con Leo">
     <meta name="twitter:description"
-        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.'">
-    <meta name="twitter:image" content="https://codigoaccesibleconleo.com/img/leo.jpeg">
+        content="Código Accesible con Leo es un sitio dedicado a ofrecer soluciones de desarrollo web accesibles y eficientes para todos los usuarios.">
+    <meta name="twitter:image" content="https://codigoaccesibleconleo.com/img/leo.png">
     <meta name="twitter:site" content="@codigo_leo">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
