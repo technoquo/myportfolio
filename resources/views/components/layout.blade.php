@@ -19,8 +19,8 @@
     <!-- Meta Keywords -->
     <meta name="keywords"
         content="desarrollo web, accesibilidad web, Laravel, PHP, Vue.js, Node.js, soluciones web, programación">
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Código Accesible con Leo">
