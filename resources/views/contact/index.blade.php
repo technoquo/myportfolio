@@ -1,19 +1,20 @@
 <x-layout :seo="$seo" :page="$page">
     <section class="bg-white dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="flex flex-col justify-center">
 
-                <div class="text-6xl dark:text-white">
+                <div class="text-6xl dark:text-white mt-10">
                     @if (session('locale') == 'en')
                         Contact me
                     @else
                         Contáctame
                     @endif
-                    <div class="flex flex-col justify-center items-center p-8">
+                    <div class="flex flex-row justify-center items-center p-8">
                         <div class="mb-4">
-                            <svg class="h-28 w-28 dark:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"
-                                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                            <svg class="md:h-28 md:w-28 h-14 w-14 dark:fill-white" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 128 128" version="1.1" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="#000000">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -47,8 +48,8 @@
                             </svg>
                         </div>
                         <div class="mb-4">
-                            <svg width="128px" height="128px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
-                                fill="none">
+                            <svg class="md:h-28 md:w-28 h-14 w-14" viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg" fill="none">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -59,8 +60,9 @@
                             </svg>
                         </div>
                         <div class="mb-4">
-                            <svg class="h-28 w-28" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                            <svg class="md:h-28 md:w-28 h-14 w-14" viewBox="0 0 48 48" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="#000000">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -80,7 +82,7 @@
                             </svg>
                         </div>
                         <div class="mb-4">
-                            <svg class="h-28 w-28" viewBox="0 0 32 32" fill="none"
+                            <svg class="md:h-28 md:w-28 h-14 w-14" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -103,23 +105,30 @@
                     </div>
 
                 </div>
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 h-10">
+                <div class="flex flex-col md:flex-row text-center justify-center gap-4">
 
 
                     <a href="mailto:leonel@codigoaccesibleconleo.com"
-                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-3">
 
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">E-Mail</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">
-                            technoquo@gmail.com
+                            leonel@codigoaccesibleconleo.com
                         </p>
                     </a>
 
 
+                    <a href="https://www.linkedin.com/in/lelobo" target="_blank"
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-3">
+
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Linkeldn
+                        </h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">linkedin.com/in/lelobo</p>
+                    </a>
 
 
                     <a href="https://t.me/lelobo75" target="_blank"
-                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-3">
 
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Telegram
                         </h5>
@@ -130,7 +139,7 @@
 
 
                     <a href="skype:live:lelobo75?chat" target="_blank"
-                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-3">
 
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Skype
                         </h5>
@@ -140,29 +149,24 @@
 
 
 
-                    <a href="https://www.linkedin.com/in/lelobo" target="_blank"
-                        class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Linkeldn
-                        </h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">linkedin.com/in/lelobo</p>
-                    </a>
 
-                    <div class="text-gray-600 dark:text-white w-80 text-xl">
-                        @if (session('locale') == 'en')
-                            I enjoy taking on new challenges, especially those related to web development accessibility.
-                            I
-                            am open to opportunities that allow me to grow professionally and contribute value to a web
-                            development team.
-                        @else
-                            Me gusta asumir nuevos retos, especialmente los relacionados con la accesibilidad en el
-                            desarrollo web. Estoy abierto a oportunidades que me permitan crecer profesionalmente y
-                            aportar valor a un equipo de desarrollo web.
-                        @endif
-                    </div>
+
 
                 </div>
 
+            </div>
+            <div class="text-gray-600 dark:text-white text-xl w-full mt-5">
+                @if (session('locale') == 'en')
+                    I enjoy taking on new challenges, especially those related to web development accessibility.
+                    I
+                    am open to opportunities that allow me to grow professionally and contribute value to a web
+                    development team.
+                @else
+                    Me gusta asumir nuevos retos, especialmente los relacionados con la accesibilidad en el
+                    desarrollo web. Estoy abierto a oportunidades que me permitan crecer profesionalmente y
+                    aportar valor a un equipo de desarrollo web.
+                @endif
             </div>
 
 

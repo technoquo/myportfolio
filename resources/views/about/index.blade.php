@@ -70,7 +70,7 @@
                                 el frontend. He trabajado en diversos proyectos para diferentes clientes y empresas,
                                 adquiriendo habilidades en múltiples lenguajes de programación a través del aprendizaje
                                 autodidacta. Me gradué de la Universidad Latinoamericana de Ciencia y Tecnología en
-                                Costa Rica con una licenciatura en Ingeniería en Computación.
+                                Costa Rica con un bachiller en Ingeniería Informática.
 
                                 Nací sordo, pero gracias a tecnologías web como el correo electrónico, chat, WhatsApp y
                                 herramientas de inteligencia artificial como ChatGPT, no tengo problemas para
