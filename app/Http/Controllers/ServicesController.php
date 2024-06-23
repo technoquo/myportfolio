@@ -10,7 +10,7 @@ class ServicesController extends Controller
 {
     public function index()
     {
-        $seo = (session('locale') == 'en') ? 'My Portfolio' : 'Mi Portafolio';
+        $seo = (session('locale') == 'en') ? 'Services' : 'Servicios';
 
         $page = Menu::where('language', session('locale'))->orderBy('order', 'asc')->get();
 
