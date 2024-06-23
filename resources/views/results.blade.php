@@ -10,7 +10,9 @@
     </x-page-heading>
     <div class="space-y-6">
         @foreach ($portfolios as $porfolio)
-            <x-portfolio-card-wide :$porfolio />
+            @if ($porfolio->active)
+                <x-portfolio-card-wide :$porfolio />
+            @endif
         @endforeach
     </div>
 </x-layout>

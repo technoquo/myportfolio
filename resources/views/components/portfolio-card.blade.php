@@ -7,12 +7,12 @@
                 {{ $porfolio->title }}
             </a>
         </h3>
-        <p class="text-sm mt-4">{{ $job->schedule }} - from {{ $job->salary }}</p>
+
     </div>
     <div class="flex justify-between items-center mt-auto">
         <div>
             @foreach ($porfolio->tags as $tag)
-                <x-tag :$tag size="small" />
+                <x-tag :$tag />
             @endforeach
 
 
