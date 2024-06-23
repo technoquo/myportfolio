@@ -6,4 +6,4 @@
 
 @endphp
 
-<a class="{{ $classes }}" href="{{ $tag }}">{{ $tag }}</a>
+<a class="{{ $classes }}" href="/tags/{{ $tag }}">{{ $tag }}</a>

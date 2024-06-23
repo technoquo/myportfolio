@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MyPortfolioController;
+use App\Http\Controllers\PruebaController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TagController;
 
@@ -17,5 +18,4 @@ Route::get('/myportfolio', [MyPortfolioController::class, 'index'])->name('mypor
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
-
-Route::get('/tags/{tag}', TagController::class);
+Route::get('/tags/{tag:name}', TagController::class);
